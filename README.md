@@ -246,25 +246,26 @@ JWT Verification
        ▼
 Authenticated User
 ```
-🤖 AI Evaluation Flow
+## 🤖 AI Evaluation Flow
 
 When a candidate submits an answer, the backend sends the following information to Gemini:
 
-Job Role
-Experience Level
-Difficulty
-Interview Question
-Candidate Answer
+- **Job Role**
+- **Experience Level**
+- **Difficulty**
+- **Interview Question**
+- **Candidate Answer**
 
 Gemini evaluates the answer based on:
 
-Technical correctness
-Relevance
-Clarity
-Completeness
+- **Technical correctness**
+- **Relevance**
+- **Clarity**
+- **Completeness**
 
-Example AI Response:
-```
+### Example AI Response
+
+```json
 {
   "score": 8,
   "feedback": "Good explanation with correct technical concepts.",
@@ -278,16 +279,16 @@ Example AI Response:
   ]
 }
 ```
-🗄️ Database Design
-```
-User
+## 🗄️ Database Design
+
+```text
 User
 │
 ├── name
 ├── email
 ├── password
 └── timestamps
-Interview
+
 Interview
 │
 ├── user
@@ -299,16 +300,20 @@ Interview
 ├── status
 ├── completedAt
 └── timestamps
+
+
 ```
-🔌 API Endpoints
-Authentication
-```
+## 🔌 API Endpoints
+
+### Authentication
+
+```text
 POST /api/auth/register
 POST /api/auth/login
 GET  /api/auth/profile
 ```
-Interviews
-```
+### Interviews
+```text
 POST   /api/interviews
 GET    /api/interviews
 GET    /api/interviews/:id
@@ -316,75 +321,93 @@ POST   /api/interviews/:id/answer
 PUT    /api/interviews/:id/complete
 DELETE /api/interviews/:id
 ```
-Protected endpoints use:
+### Protected endpoints use:
 
-Authorization: Bearer <JWT_TOKEN>
-⚙️ Installation
-1. Clone the repository
+- Authorization: Bearer <JWT_TOKEN>
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/smrutisync/InterviewVerse-AI.git
 cd InterviewVerse-AI
-2. Install frontend dependencies
+```
+### 2. Install frontend dependencies
+```bash
 cd client
 npm install
-3. Install backend dependencies
+```
+### 3. Install backend dependencies
 
 Open another terminal:
-
+```bash
 cd server
 npm install
-🔑 Environment Variables
+```
+
+## 🔑 Environment Variables
 
 Create the following file locally:
 
+```text
 server/.env
-
-Add:
-
+```
+### Add:
+```bash
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 GEMINI_API_KEY=your_gemini_api_key
-⚠️ Security
+```
+## ⚠️ Security
 
-Never upload .env files or API keys to GitHub.
+Never upload `.env` files or API keys to GitHub.
 
 Do not expose:
 
-MongoDB credentials
-Gemini API keys
-JWT secrets
-Database passwords
+- MongoDB credentials
+- Gemini API keys
+- JWT secrets
+- Database passwords
 
-The project uses .gitignore to prevent environment files from being committed.
+The project uses `.gitignore` to prevent environment files from being committed.
 
-▶️ Running the Project
-Start Backend
+## ▶️ Running the Project
 
-From the server directory:
+### Start Backend
 
+From the `server` directory:
+
+```bash
 npm start
-
+```
 Backend runs on:
-
+```bash
 http://localhost:5000
+```
 Start Frontend
 
 From the client directory:
-
+```bash
 npm run dev
-
+```
 Frontend runs on:
-
+```bash
 http://localhost:5173
-🧪 Testing
+```
+## 🧪 Testing
 
 The project can be tested using:
-```
-Browser
-Postman
-MongoDB
-VS Code terminal
-Main test flow
+
+- Browser
+- Postman
+- MongoDB
+- VS Code terminal
+
+### Main Test Flow
+
+```text
 Register
    ↓
 Login
@@ -405,32 +428,36 @@ View Report
    ↓
 Interview History
 ```
-📱 Application Modules
-Module	Description
-🏠 Home	Main application navigation
-🔐 Login	User authentication
-📝 Register	New user registration
-🎯 Interview	Interview configuration
-🎤 Interview Session	Question and answer interface
-🤖 AI Evaluation	Gemini-powered answer evaluation
-📊 Dashboard	Interview statistics and history
-👤 Profile	User information
-📋 Report	Interview performance and feedback
-🎯 Target Users
+## 📱 Application Modules
+
+| Module | Description |
+|---|---|
+| 🏠 Home | Main application navigation |
+| 🔐 Login | User authentication |
+| 📝 Register | New user registration |
+| 🎯 Interview | Interview configuration |
+| 🎤 Interview Session | Question and answer interface |
+| 🤖 AI Evaluation | Gemini-powered answer evaluation |
+| 📊 Dashboard | Interview statistics and history |
+| 👤 Profile | User information |
+| 📋 Report | Interview performance and feedback |
+
+## 🎯 Target Users
 
 InterviewVerse AI is primarily designed for:
 
-Freshers
-College students
-Job seekers
-Software engineering candidates
-Candidates preparing for technical interviews
-💡 Why InterviewVerse AI?
+- Freshers
+- College students
+- Job seekers
+- Software engineering candidates
+- Candidates preparing for technical interviews
+## 💡 Why InterviewVerse AI?
 
 Traditional interview preparation often provides static questions without personalized feedback.
 
 InterviewVerse AI provides an interactive experience where candidates can:
-```
+
+```text
 Practice
    ↓
 Answer
@@ -442,8 +469,6 @@ Understand Weaknesses
 Improve
    ↓
 Practice Again
-
-This creates a personalized interview preparation cycle.
 ```
 ## 🔒 Security
 
