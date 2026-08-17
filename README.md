@@ -213,6 +213,7 @@ InterviewVerse-AI
                      ▼
              Interview History
 🔐 Authentication Flow
+```
 User Registration
        │
        ▼
@@ -244,6 +245,7 @@ JWT Verification
        │
        ▼
 Authenticated User
+```
 🤖 AI Evaluation Flow
 
 When a candidate submits an answer, the backend sends the following information to Gemini:
@@ -279,6 +281,7 @@ The AI returns structured evaluation data:
 The backend validates and normalizes the AI response before sending it to the frontend.
 
 🗄️ Database Design
+```
 User
 User
 │
@@ -298,6 +301,7 @@ Interview
 ├── status
 ├── completedAt
 └── timestamps
+```
 🔌 API Endpoints
 Authentication
 POST /api/auth/register
@@ -374,7 +378,7 @@ http://localhost:5173
 🧪 Testing
 
 The project can be tested using:
-
+```
 Browser
 Postman
 MongoDB
@@ -399,6 +403,7 @@ Complete Interview
 View Report
    ↓
 Interview History
+```
 📱 Application Modules
 Module	Description
 🏠 Home	Main application navigation
@@ -491,6 +496,7 @@ Docker support
 CI/CD pipeline
 Cloud deployment
 📈 Future Vision
+```
 
 InterviewVerse AI can evolve into a complete AI-powered career preparation platform with:
 
@@ -505,6 +511,7 @@ AI Evaluation
 Performance Analytics
       ↓
 Personalized Learning
+```
 👨‍💻 Author
 Smruti Ranjan Nayak
 
