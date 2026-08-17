@@ -445,58 +445,58 @@ Practice Again
 
 This creates a personalized interview preparation cycle.
 ```
-🔒 Security
+## 🔒 Security
 
 The application implements:
 
-bcrypt password hashing
-JWT authentication
-Protected backend routes
-User-specific interview access
-Environment variables for sensitive credentials
-.gitignore protection for secrets
-Backend validation
-AI response validation
-📚 Learning Outcomes
+- bcrypt password hashing
+- JWT authentication
+- Protected backend routes
+- User-specific interview access
+- Environment variables for sensitive credentials
+- `.gitignore` protection for secrets
+- Backend validation
+- AI response validation
+
+## 📚 Learning Outcomes
 
 This project demonstrates practical knowledge of:
 
--Full-stack web development
--React.js
--Node.js
--Express.js
--REST API development
--MongoDB
--Mongoose
--JWT authentication
--Password hashing
--CRUD operations
--Frontend-backend communication
--Generative AI integration
--Google Gemini API
--AI response validation
--Git
--GitHub
--Postman
--Application architecture
-🚀 Future Improvements
+- Full-stack web development
+- React.js
+- Node.js
+- Express.js
+- REST API development
+- MongoDB
+- Mongoose
+- JWT authentication
+- Password hashing
+- CRUD operations
+- Frontend-backend communication
+- Generative AI integration
+- Google Gemini API
+- AI response validation
+- Git & GitHub
+- Postman
+- Application architecture
+
+## 🚀 Future Improvements
 
 The current version focuses on the complete core interview experience.
 
 Possible future enhancements include:
 
--Resume-based interview questions
--RAG-based interview generation
--Role-specific advanced question generation
--Conversation memory
--Advanced performance analytics
--Admin dashboard
--Voice-based interviews
--Speech analysis
--Docker support
--CI/CD pipeline
--Cloud deployment
-📈 Future Vision
+- Resume-based interview questions
+- RAG-based interview generation
+- Role-specific advanced question generation
+- Conversation memory
+- Advanced performance analytics
+- Admin dashboard
+- Voice-based interviews
+- Speech analysis
+- Docker support
+- CI/CD pipeline
+- Cloud deployment
 ```
 
 InterviewVerse AI can evolve into a complete AI-powered career preparation platform with:
