@@ -522,42 +522,28 @@ Possible future enhancements include:
 - Docker support
 - CI/CD pipeline
 - Cloud deployment
-```
 
-InterviewVerse AI can evolve into a complete AI-powered career preparation platform with:
+## 👨‍💻 Author
 
-Resume Analysis
-      ↓
-Skill Gap Detection
-      ↓
-Personalized Interview
-      ↓
-AI Evaluation
-      ↓
-Performance Analytics
-      ↓
-Personalized Learning
-```
-👨‍💻 Author
-Smruti Ranjan Nayak
+**Smruti Ranjan Nayak**
 
 B.Tech – Computer Science & Engineering
 
-
-⭐ Project Highlights
+## ⭐ Project Highlights
 
 InterviewVerse AI combines full-stack web development, secure authentication, MongoDB data management, and Generative AI to create an interactive interview preparation platform.
 
--Core Technologies
--React.js
--Node.js
--Express.js
--MongoDB
--Mongoose
--JWT
--bcrypt
--Google Gemini AI
--Axios
--Git
--GitHub
--Postman
+### 🛠️ Core Technologies
+
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcrypt
+- Google Gemini AI
+- Axios
+- Git
+- GitHub
+- Postman
