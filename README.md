@@ -162,8 +162,9 @@ InterviewVerse-AI
 ├── .gitignore
 ├── README.md
 └── ...
-
+```
 🔄 Application Workflow
+
                     USER
                      │
                      ▼
