@@ -263,8 +263,8 @@ Relevance
 Clarity
 Completeness
 
-The AI returns structured evaluation data:
-
+Example AI Response:
+```
 {
   "score": 8,
   "feedback": "Good explanation with correct technical concepts.",
@@ -277,9 +277,7 @@ The AI returns structured evaluation data:
     "Explain the concept in more depth"
   ]
 }
-
-The backend validates and normalizes the AI response before sending it to the frontend.
-
+```
 🗄️ Database Design
 ```
 User
@@ -304,17 +302,20 @@ Interview
 ```
 🔌 API Endpoints
 Authentication
+```
 POST /api/auth/register
 POST /api/auth/login
 GET  /api/auth/profile
+```
 Interviews
+```
 POST   /api/interviews
 GET    /api/interviews
 GET    /api/interviews/:id
 POST   /api/interviews/:id/answer
 PUT    /api/interviews/:id/complete
 DELETE /api/interviews/:id
-
+```
 Protected endpoints use:
 
 Authorization: Bearer <JWT_TOKEN>
@@ -429,7 +430,7 @@ Candidates preparing for technical interviews
 Traditional interview preparation often provides static questions without personalized feedback.
 
 InterviewVerse AI provides an interactive experience where candidates can:
-
+```
 Practice
    ↓
 Answer
@@ -443,7 +444,7 @@ Improve
 Practice Again
 
 This creates a personalized interview preparation cycle.
-
+```
 🔒 Security
 
 The application implements:
@@ -460,41 +461,41 @@ AI response validation
 
 This project demonstrates practical knowledge of:
 
-Full-stack web development
-React.js
-Node.js
-Express.js
-REST API development
-MongoDB
-Mongoose
-JWT authentication
-Password hashing
-CRUD operations
-Frontend-backend communication
-Generative AI integration
-Google Gemini API
-AI response validation
-Git
-GitHub
-Postman
-Application architecture
+-Full-stack web development
+-React.js
+-Node.js
+-Express.js
+-REST API development
+-MongoDB
+-Mongoose
+-JWT authentication
+-Password hashing
+-CRUD operations
+-Frontend-backend communication
+-Generative AI integration
+-Google Gemini API
+-AI response validation
+-Git
+-GitHub
+-Postman
+-Application architecture
 🚀 Future Improvements
 
 The current version focuses on the complete core interview experience.
 
 Possible future enhancements include:
 
-Resume-based interview questions
-RAG-based interview generation
-Role-specific advanced question generation
-Conversation memory
-Advanced performance analytics
-Admin dashboard
-Voice-based interviews
-Speech analysis
-Docker support
-CI/CD pipeline
-Cloud deployment
+-Resume-based interview questions
+-RAG-based interview generation
+-Role-specific advanced question generation
+-Conversation memory
+-Advanced performance analytics
+-Admin dashboard
+-Voice-based interviews
+-Speech analysis
+-Docker support
+-CI/CD pipeline
+-Cloud deployment
 📈 Future Vision
 ```
 
@@ -522,16 +523,16 @@ B.Tech – Computer Science & Engineering
 
 InterviewVerse AI combines full-stack web development, secure authentication, MongoDB data management, and Generative AI to create an interactive interview preparation platform.
 
-Core Technologies
-React.js
-Node.js
-Express.js
-MongoDB
-Mongoose
-JWT
-bcrypt
-Google Gemini AI
-Axios
-Git
-GitHub
-Postman
+-Core Technologies
+-React.js
+-Node.js
+-Express.js
+-MongoDB
+-Mongoose
+-JWT
+-bcrypt
+-Google Gemini AI
+-Axios
+-Git
+-GitHub
+-Postman
